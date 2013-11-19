@@ -1,20 +1,19 @@
 {
   "name": "Calm",
-  "description": "A simple calculator.",
+  "description": "Calm.com for your Desktop",
   "manifest_version": 2,
   "minimum_chrome_version": "23",
   "version": "1.0.0",
   "offline_enabled": false,
-  "content_security_policy": "default-src 'self' https://www.youtube.com https://www.youtube.com/iframe_api; object-src 'self'",
   "app": {
     "background": {
       "scripts": ["main.js"]
     }
   },
   "permissions": [
-      "clipboardWrite",
       "storage",
-      "https://*.youtube.com/"
+      "webview",
+      "http://calm.com/"
   ],
   "icons": {
     "16": "assets/icon-128x128.png",
